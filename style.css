@@ -1,0 +1,555 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+:root {
+    --blue: #1e90ff;
+    --cta-active: #ffbd39; 
+    --white: white;
+    --black: black;
+    --grey: #999999;
+  }
+  
+body
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: "Poppins";
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--white);
+    max-width: 1200px;
+    margin: auto;
+display: flex;
+flex-direction: column;
+gap: 120px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+ul li
+{
+    list-style: none;
+}
+.main-container
+{
+    display: flex;
+    gap: 120px;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+.flex
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 32px;
+}
+h1{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.navbar
+{
+    display: flex;
+}
+.header
+{
+    padding: 32px;
+}
+
+.nav-link:hover{
+border-bottom: 2px solid var(--cta-active);
+padding-bottom: 2px;
+}
+
+.home-title
+{
+    color: var(--white);
+    align-items: center;
+    width: 50%;
+}
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+
+}
+#home-section
+{
+    height: 500px;
+    align-items: center;
+}
+#home-section img{
+    width: 50%;
+    height: 100%;
+}
+
+.subheading
+{
+    color: var(--cta-active);
+}
+
+.heading
+{
+    font-size: 60px;
+line-height: 1.2;
+}
+.profile
+{
+
+    font-size: 30px;
+    font-weight: 400;
+}
+.btn
+{
+    border-radius: 32px;
+    padding: 16px 24px;
+    border-width: 1px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 24px 0;
+}
+
+.btn-yellow
+
+{
+    background-color: var(--cta-active);
+    color: var(--black);
+}
+.btn-transparent
+{
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--white);
+}
+.profile-image
+{
+    width: 50%;
+}
+.profile-image img
+{
+    width: 100%;
+}
+.heading-section
+{
+    position: relative;
+}
+.back-heading{
+ 
+    position: absolute;
+    top: 9%;
+    left: -16px;
+    font-size: 7vw;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    font-weight: 900;
+}
+.front-heading
+{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.key{font-weight: 600;
+color: #fff;
+width: 130px;
+min-width: 130px;
+}
+.about-info li .key{
+    display: inline-block;
+}
+
+.about-info li .value
+{
+ color: var(--grey);
+}
+
+.body
+{
+    color: var(--grey);
+    margin-bottom: 16px ;
+}
+.gap
+{
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+.count
+{
+    text-align: center;
+}
+.counter-wrap
+{
+    width: 100px;
+    
+}
+
+.heading-section
+{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.center
+{
+    left: 30%;
+    top: 36%;
+}
+.body-width
+{
+    width: 70%;
+    margin: auto;
+}
+
+.circle-top
+{
+
+ background-color: white;
+ width: 16px;
+ height: 16px;
+position: absolute;
+left: 48.65%;
+border-radius: 100%;
+ 
+}
+.resume-wrap
+{
+    position: relative;
+}
+
+.right-side
+{
+    width: 100%;
+}
+
+.left-side
+{
+    border-left: 1px solid white;
+    padding: 0 48px;
+    width: 100%;
+}
+.circle-bottom
+{
+
+ background-color: white;
+ width: 16px;
+ height: 16px;
+position: absolute;
+left: 48.65%;
+top: 100%;
+border-radius: 100%;
+}
+
+.services-1
+{
+ 
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 32px;
+   width: 30%;
+   height: 260px;
+}
+
+.flex-wrap
+{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+}
+
+
+.checked {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; 
+    
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hides the back of the card initially */
+    transition: transform 0.5s;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px
+}
+    
+
+
+.front {
+    transform: rotateY(0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    gap: 32px;
+
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #ffbd39;
+    color: black;
+
+}
+
+.checked:hover .front {
+    transform: rotateY(180deg);
+}
+
+.checked:hover .back {
+    transform: rotateY(0deg);
+}
+.front img
+{
+    display: flex;
+    margin: auto;
+    height: 64px;
+    margin-bottom: 12px;
+  
+}
+
+.services-1 .desc h3:after {
+    position: absolute;
+    bottom: 76px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #ffbd39;
+    margin: 0 auto;
+}
+.progress
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 12px;
+    border-radius: 12px;
+}
+.progress-bar 
+{
+    background-color: var(--cta-active);
+    height: 12px;
+    border-radius: 12px;
+}
+.width-50
+{
+    width: 46%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+}
+.mg-10
+{
+    margin-bottom: 10px;
+}
+
+.blog-entry
+{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.blog-entry img
+{
+    width: 100%;
+    border-radius: 12px;
+}
+.h3
+{
+font-size: 20px;
+margin-bottom: 16px;
+font-weight: 500;
+}
+.mb-0
+{
+    margin-bottom: 12px;
+}
+.width-25
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.icon
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.contact-img{
+    width: 50%;
+    height: 100%;
+}
+.contact-img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.width-60
+{
+    background-color: white;
+    width: 50%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact
+{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    height: 560px;
+    margin: 100px 0;
+}
+input
+{
+    padding: 6px 12px;
+    width: 100%;
+    outline: none !important;
+    color: #000000 !important;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 53px !important;
+    border: 1px solid rgb(193, 192, 192);
+
+
+}
+
+textarea
+{
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(193, 192, 192);
+}
+.text-center
+{
+    text-align: center;
+    
+}
+h2{
+    margin-bottom: 40px;
+    color: var(--white);
+    text-align: start;
+}
+
+
+.alignment
+{ 
+justify-content: start;
+align-items: start;
+color:  var(--grey);
+}
+.list-unstyled{
+    gap: 8px;
+    flex-direction: column;
+    display: flex;
+}
+.list-unstyled li a{
+    color:  var(--grey);
+}
+.mg-top
+{
+    margin-top: 24px;
+}
+.menu-icon {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Hide the checkbox */
+  .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:#ffbd396f;/* Red background with transparency */
+      display: none;
+      z-index: 99; /* Ensure the overlay is above other content */
+    }
+  
+    .overlay-content {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      text-align: center;
+      background-color: var(--black);
+      color: white;
+      width: 90%;
+      height: 100%;
+        padding: 32px;
+      z-index: 99999
+    }
+  
+    /* Show the overlay when the menu toggle is checked */
+    #menu-toggle:checked ~ .overlay {
+      display: block;
+    }
+    .nav-list
+    {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  
+  
+  
+  
+  
